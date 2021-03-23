@@ -10,12 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: SlackNotification@6
-  inputs:
-    SlackApiToken: 'xoxp-1888293459186-1885212354085-1894803455684-b5f9b3599f2577925a94ba7dd4106d5c'
-    MessageAuthor: 'Azure DevOps'
-    Channel: '#general'
-    NotificationType: 'ChatMessage'
+
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -26,3 +21,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: SlackNotification@6
+  inputs:
+    SlackApiToken: 'xoxp-1888293459186-1885212354085-1894803455684-b5f9b3599f2577925a94ba7dd4106d5c'
+    MessageAuthor: 'Azure DevOps'
+    Channel: '#general'
+    NotificationType: 'ChatMessage'
