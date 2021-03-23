@@ -22,11 +22,9 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-
 - task: SlackNotification@6
   inputs:
-    SlackApiToken: 'xoxp-1888293459186-1885212354085-1894803455684-b5f9b3599f2577925a94ba7dd4106d5c'
+    SlackApiToken: '$(Slack.ApiKey)'
     MessageAuthor: 'Azure DevOps'
     Channel: '#general'
     NotificationType: 'ChatMessage'
-    Message: 'dsfdsfsdfsdfsd'
