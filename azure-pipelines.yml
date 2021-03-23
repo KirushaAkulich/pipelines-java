@@ -28,7 +28,7 @@ steps:
       
       echo Hello world
       
-      string_version= "some string"
+      string_version="some string"
 - task: SlackNotification@6
   inputs:
     SlackApiToken: '$(Slack.ApiKey)'
