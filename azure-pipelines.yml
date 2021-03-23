@@ -1,10 +1,4 @@
 # Maven
-- task: SlackNotification@6
-  inputs:
-    SlackApiToken: 'xapp-1-A01SH1KBXG9-1888680650947-a1e77f2857c2384877e91fcedb664bca331fec425e655eac19f0c0760ac30207'
-    MessageAuthor: 'Azure DevOps'
-    Channel: '@token-replacement'
-    NotificationType: 'ChatMessage'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
