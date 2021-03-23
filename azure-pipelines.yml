@@ -14,7 +14,7 @@ steps:
   inputs:
     SlackApiToken: 'xoxp-1888293459186-1885212354085-1901219091537-fe8d3019b13c744c6d9813a4542020af'
     MessageAuthor: 'Azure DevOps'
-    Channel: 'kirillakulich0'
+    Channel: '#general'
     NotificationType: 'ChatMessage'
 - task: Maven@3
   inputs:
